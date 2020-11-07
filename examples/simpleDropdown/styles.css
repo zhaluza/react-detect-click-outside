@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  background-color: #0984e3;
+  padding: 1rem;
+}
+
+button {
+  background-color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.2rem 0.5rem;
+}
+
+.dropdown {
+  position: absolute;
+  top: 3.6rem;
+  background-color: #2d3436;
+  color: #fff;
+}
+
+.dropdown p {
+  padding: 1rem;
+}
+
+.message {
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
