@@ -8,12 +8,10 @@
     "start": "rollup -c -w",
     "test": "jest --verbose",
     "lint": "prettier --check .",
-    "format": "prettier --write ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format && yarn test"
-    }
+    "format": "prettier --write .",
+    "postinstall": "husky install",
+    "prepublish": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "keywords": [
     "react",
@@ -32,8 +30,9 @@
     "@types/react-dom": "^16.9.9",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
-    "husky": "^4.3.0",
+    "husky": "^5.0.0-beta.0",
     "jest": "^26.6.3",
+    "pinst": "^2.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rollup": "^2.33.1",
