@@ -11,7 +11,9 @@
     "format": "prettier --write ."
   },
   "husky": {
-    "hooks": {}
+    "hooks": {
+      "pre-commit": "yarn format && yarn test"
+    }
   },
   "keywords": [
     "react",
