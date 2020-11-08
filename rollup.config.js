@@ -12,6 +12,6 @@ export default {
       strict: false,
     },
   ],
-  plugins: [typescript({ objectHashIgnoreUnknownHack: true })],
+  plugins: [typescript()],
   external: ['react', 'react-dom'],
 };
