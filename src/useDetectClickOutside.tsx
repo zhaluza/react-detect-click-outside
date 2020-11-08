@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef } from 'react';
 
 interface Props {
   onClose: () => void;
-  exitKeys?: string[];
+  triggerKeys?: string[];
   disableClick?: boolean;
   disableKeys?: boolean;
 }
@@ -13,15 +13,15 @@ interface Props {
  */
 export function useDetectClickOutside({
   onClose,
-  exitKeys,
+  triggerKeys,
   disableClick,
   disableKeys,
 }: Props) {
   const ref = useRef(null);
 
   const keyListener = useCallback((e: KeyboardEvent) => {
-    if (exitKeys) {
-      if (exitKeys.includes(e.key)) {
+    if (triggerKeys) {
+      if (triggerKeys.includes(e.key)) {
         onClose();
       }
     } else {
