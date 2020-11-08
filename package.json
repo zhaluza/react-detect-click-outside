@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "test": "jest --verbose"
   },
   "keywords": [
     "react",
@@ -17,14 +18,21 @@
   "author": "Zac Haluza",
   "license": "ISC",
   "devDependencies": {
+    "@types/enzyme": "^3.10.8",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.15",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "jest": "^26.6.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rollup": "^2.33.1",
     "rollup-plugin-typescript2": "^0.29.0",
+    "ts-jest": "^26.4.3",
     "typescript": "^4.0.5"
   },
   "peerDependencies": {
@@ -33,5 +41,19 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "setupFiles": [
+      "<rootDir>/tests/setupTests.ts"
+    ]
+  }
 }
