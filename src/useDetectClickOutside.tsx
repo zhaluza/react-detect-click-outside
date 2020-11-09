@@ -12,7 +12,7 @@ interface Props {
  * Hook used to detect clicks outside a component (or an escape key press). onTriggered function is triggered on `click` or escape `keyup` event.
  *
  */
-export default function useDetectClickOutside({
+export function useDetectClickOutside({
   onTriggered,
   disableClick,
   disableKeys,
