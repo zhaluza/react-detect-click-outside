@@ -5,6 +5,7 @@ interface ContainerProps {
   disableClick?: boolean;
   disableKeys?: boolean;
   triggerKeys?: string[];
+  allowAnyKey?: boolean;
 }
 interface ToggleProps extends ContainerProps {
   onClose: () => void;
@@ -15,12 +16,14 @@ const ToggleableDiv: React.FC<ToggleProps> = ({
   disableClick,
   disableKeys,
   triggerKeys,
+  allowAnyKey,
 }) => {
   const ref = useDetectClickOutside({
     onClose,
     disableKeys,
     disableClick,
     triggerKeys,
+    allowAnyKey,
   });
   return (
     <div data-testid="toggle-component" ref={ref}>
@@ -33,6 +36,7 @@ const Container: React.FC<ContainerProps> = ({
   disableClick,
   disableKeys,
   triggerKeys,
+  allowAnyKey,
 }) => {
   const [displayComponent, setDisplayComponent] = useState(false);
   const handleDisplay = () => {
@@ -54,6 +58,7 @@ const Container: React.FC<ContainerProps> = ({
             disableClick={disableClick}
             disableKeys={disableKeys}
             triggerKeys={triggerKeys}
+            allowAnyKey={allowAnyKey}
           />
         )}
       </header>
