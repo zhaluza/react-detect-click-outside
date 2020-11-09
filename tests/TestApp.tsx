@@ -8,18 +8,18 @@ interface ContainerProps {
   allowAnyKey?: boolean;
 }
 interface ToggleProps extends ContainerProps {
-  onClose: () => void;
+  onTriggered: () => void;
 }
 
 const ToggleableDiv: React.FC<ToggleProps> = ({
-  onClose,
+  onTriggered,
   disableClick,
   disableKeys,
   triggerKeys,
   allowAnyKey,
 }) => {
   const ref = useDetectClickOutside({
-    onClose,
+    onTriggered,
     disableKeys,
     disableClick,
     triggerKeys,
@@ -54,7 +54,7 @@ const Container: React.FC<ContainerProps> = ({
         </button>
         {displayComponent && (
           <ToggleableDiv
-            onClose={handleClose}
+            onTriggered={handleClose}
             disableClick={disableClick}
             disableKeys={disableKeys}
             triggerKeys={triggerKeys}

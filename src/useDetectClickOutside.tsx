@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef } from 'react';
 
 interface Props {
-  onClose: () => void;
+  onTriggered: () => void;
   triggerKeys?: string[];
   disableClick?: boolean;
   disableKeys?: boolean;
@@ -9,11 +9,11 @@ interface Props {
 }
 
 /**
- * Hook used to detect clicks outside a component (or an escape key press). onClose function is triggered on `click` or escape `keyup` event.
+ * Hook used to detect clicks outside a component (or an escape key press). onTriggered function is triggered on `click` or escape `keyup` event.
  *
  */
 export function useDetectClickOutside({
-  onClose,
+  onTriggered,
   triggerKeys,
   disableClick,
   disableKeys,
@@ -23,14 +23,14 @@ export function useDetectClickOutside({
 
   const keyListener = useCallback((e: KeyboardEvent) => {
     if (allowAnyKey) {
-      onClose();
+      onTriggered();
     } else if (triggerKeys) {
       if (triggerKeys.includes(e.key)) {
-        onClose();
+        onTriggered();
       }
     } else {
       if (e.key === 'Escape') {
-        onClose();
+        onTriggered();
       }
     }
   }, []);
@@ -39,7 +39,7 @@ export function useDetectClickOutside({
     (e: MouseEvent) => {
       if (ref && ref.current) {
         if (!(ref.current! as any).contains(e.target)) {
-          onClose?.();
+          onTriggered?.();
         }
       }
     },
