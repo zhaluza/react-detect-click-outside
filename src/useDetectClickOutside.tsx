@@ -5,6 +5,7 @@ interface Props {
   triggerKeys?: string[];
   disableClick?: boolean;
   disableKeys?: boolean;
+  allowAnyKey?: boolean;
 }
 
 /**
@@ -16,11 +17,15 @@ export function useDetectClickOutside({
   triggerKeys,
   disableClick,
   disableKeys,
+  allowAnyKey,
 }: Props) {
   const ref = useRef(null);
 
   const keyListener = useCallback((e: KeyboardEvent) => {
-    if (triggerKeys) {
+    if (allowAnyKey) {
+      console.log('triggered');
+      onClose();
+    } else if (triggerKeys) {
       if (triggerKeys.includes(e.key)) {
         onClose();
       }
