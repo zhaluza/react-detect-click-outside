@@ -1,1 +1,1 @@
-export { useDetectClickOutside } from './useDetectClickOutside';
+export { default } from './useDetectClickOutside';

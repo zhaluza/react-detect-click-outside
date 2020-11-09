@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDetectClickOutside } from '../src/useDetectClickOutside';
+import useDetectClickOutside from '../src';
 
 interface ContainerProps {
   disableClick?: boolean;
