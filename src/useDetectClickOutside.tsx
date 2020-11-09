@@ -2,10 +2,10 @@ import { useCallback, useEffect, useRef } from 'react';
 
 interface Props {
   onTriggered: () => void;
-  triggerKeys?: string[];
   disableClick?: boolean;
   disableKeys?: boolean;
   allowAnyKey?: boolean;
+  triggerKeys?: string[];
 }
 
 /**
@@ -14,10 +14,10 @@ interface Props {
  */
 export function useDetectClickOutside({
   onTriggered,
-  triggerKeys,
   disableClick,
   disableKeys,
   allowAnyKey,
+  triggerKeys,
 }: Props) {
   const ref = useRef(null);
 
