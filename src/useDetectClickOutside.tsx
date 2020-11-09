@@ -23,7 +23,6 @@ export function useDetectClickOutside({
 
   const keyListener = useCallback((e: KeyboardEvent) => {
     if (allowAnyKey) {
-      console.log('triggered');
       onClose();
     } else if (triggerKeys) {
       if (triggerKeys.includes(e.key)) {
