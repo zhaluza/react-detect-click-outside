@@ -39,7 +39,7 @@ npm i react-detect-click-outside
 Import into your component like so:
 
 ```javascript
-import useDetectClickOutside from 'react-detect-click-outside';
+import { useDetectClickOutside } from 'react-detect-click-outside';
 ```
 
 <!-- USAGE EXAMPLES -->
