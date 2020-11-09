@@ -1,7 +1,7 @@
 {
   "name": "react-detect-click-outside",
   "version": "1.0.0",
-  "description": "Detects clicks outside React components to close them. Also handles keypresses.",
+  "description": "Detects clicks outside React components, and also handles keypresses.",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
@@ -10,7 +10,7 @@
     "lint": "prettier --check .",
     "format": "prettier --write .",
     "postinstall": "husky install",
-    "prepublish": "pinst --disable",
+    "prepare": "pinst --disable",
     "postpublish": "pinst --enable"
   },
   "keywords": [
