@@ -49,7 +49,7 @@ const Dropdown = ({ closeDropdown }) => {
   const ref = useDetectClickOutside({ onTriggered: closeDropdown });
   return (
     <div className="dropdown" ref={ref}>
-      <p>I'm a dropdown!</p>
+      <p>This is a dropdown!</p>
     </div>
   );
 };
@@ -93,7 +93,7 @@ const ref = useDetectClickOutside({});
    ```javascript
    return (
      <div className="dropdown" ref={ref}>
-       <p>I'm a dropdown!</p>
+       <p>This is a dropdown!</p>
      </div>
    );
    ```
@@ -105,7 +105,7 @@ const ref = useDetectClickOutside({});
      const ref = useDetectClickOutside({ onTriggered: closeDropdown });
      return (
        <div className="dropdown" ref={ref}>
-         <p>I'm a dropdown!</p>
+         <p>This is a dropdown!</p>
        </div>
      );
    };
