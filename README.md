@@ -2,7 +2,7 @@
 
 A lightweight React hook that detects clicks outside elements and triggers a callback. Can also detect keypresses.
 
-Ideal for dropdowns!
+Great for toggling dropdowns!
 
 <!-- TABLE OF CONTENTS -->
 
