@@ -3,6 +3,10 @@
   "version": "1.0.6",
   "description": "Detects clicks outside React components, and also handles keypresses.",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhaluza/react-detect-click-outside.git"
+  },
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
