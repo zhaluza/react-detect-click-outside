@@ -13,7 +13,7 @@
     "test": "jest --verbose",
     "lint": "prettier --check .",
     "format": "prettier --write .",
-    "postinstall": "husky install",
+    "_postinstall": "husky install",
     "prepare": "pinst --disable",
     "postpublish": "pinst --enable"
   },
