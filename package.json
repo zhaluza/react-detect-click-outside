@@ -1,6 +1,6 @@
 {
   "name": "react-detect-click-outside",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Detects clicks outside React components, and also handles keypresses.",
   "main": "dist/index.js",
   "repository": {
