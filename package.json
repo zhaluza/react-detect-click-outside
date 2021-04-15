@@ -15,7 +15,8 @@
     "format": "prettier --write .",
     "postinstall": "husky install",
     "prepare": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "publish": "yarn build && npm publish"
   },
   "keywords": [
     "react",
