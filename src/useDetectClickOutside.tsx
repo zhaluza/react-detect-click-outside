@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef } from 'react';
 
 interface Props {
-  onTriggered: () => void;
+  onTriggered: (e: Event) => void;
   disableClick?: boolean;
   disableKeys?: boolean;
   allowAnyKey?: boolean;
@@ -23,14 +23,14 @@ export function useDetectClickOutside({
 
   const keyListener = useCallback((e: KeyboardEvent) => {
     if (allowAnyKey) {
-      onTriggered();
+      onTriggered(e);
     } else if (triggerKeys) {
       if (triggerKeys.includes(e.key)) {
-        onTriggered();
+        onTriggered(e);
       }
     } else {
       if (e.key === 'Escape') {
-        onTriggered();
+        onTriggered(e);
       }
     }
   }, []);
@@ -39,7 +39,7 @@ export function useDetectClickOutside({
     (e: MouseEvent) => {
       if (ref && ref.current) {
         if (!(ref.current! as any).contains(e.target)) {
-          onTriggered?.();
+          onTriggered?.(e);
         }
       }
     },
