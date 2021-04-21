@@ -2,4 +2,9 @@
 
 ## 1.0.10
 
-Bumped up dependencies to make compatibility with React 17 default (previously had to force install)
+- Bumped up dependencies
+
+## 1.0.11
+
+- Widen peer dependencies to include React 17
+- Add event param to `onTriggered` callback
