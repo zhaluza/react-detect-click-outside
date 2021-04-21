@@ -8,3 +8,7 @@
 
 - Widen peer dependencies to include React 17
 - Add event param to `onTriggered` callback
+
+## 1.0.12
+
+- Remove React from dev dependencies (leave as peer dependency)
