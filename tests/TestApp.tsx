@@ -3,6 +3,7 @@ import { useDetectClickOutside } from '../src/';
 
 interface ContainerProps {
   disableClick?: boolean;
+  disableTouch?: boolean;
   disableKeys?: boolean;
   triggerKeys?: string[];
   allowAnyKey?: boolean;
@@ -14,6 +15,7 @@ interface ToggleProps extends ContainerProps {
 const ToggleableDiv: React.FC<ToggleProps> = ({
   onTriggered,
   disableClick,
+  disableTouch,
   disableKeys,
   triggerKeys,
   allowAnyKey,
@@ -21,6 +23,7 @@ const ToggleableDiv: React.FC<ToggleProps> = ({
   const ref = useDetectClickOutside({
     onTriggered,
     disableKeys,
+    disableTouch,
     disableClick,
     triggerKeys,
     allowAnyKey,
@@ -34,6 +37,7 @@ const ToggleableDiv: React.FC<ToggleProps> = ({
 
 const Container: React.FC<ContainerProps> = ({
   disableClick,
+  disableTouch,
   disableKeys,
   triggerKeys,
   allowAnyKey,
@@ -55,6 +59,7 @@ const Container: React.FC<ContainerProps> = ({
         {displayComponent && (
           <ToggleableDiv
             onTriggered={handleClose}
+            disableTouch={disableTouch}
             disableClick={disableClick}
             disableKeys={disableKeys}
             triggerKeys={triggerKeys}
