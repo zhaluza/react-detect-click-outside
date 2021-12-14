@@ -152,6 +152,21 @@ const ref = useDetectClickOutside({
 });
 ```
 
+### `disableTouch` (optional)
+
+#### **Type:** `boolean`
+
+When passed to the hook, this option will prevent touch events from triggering the `onTriggered` callback when the component is in the DOM. This option is disabled by default.
+
+**Example:**
+
+```javascript
+const ref = useDetectClickOutside({
+  onTriggered: closeDropdown,
+  disableTouch: true,
+});
+```
+
 ### `disableKeys` (optional)
 
 #### **Type:** `boolean`
