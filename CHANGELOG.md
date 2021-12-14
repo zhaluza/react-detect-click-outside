@@ -13,6 +13,6 @@
 
 - Remove React from dev dependencies (leave as peer dependency)
 
-## 1.0.13
+## 1.1.2
 
 - Support touch events
