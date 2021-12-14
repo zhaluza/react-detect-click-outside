@@ -2,7 +2,9 @@
 
 A lightweight React hook that detects clicks outside elements and triggers a callback. Can also detect keypresses.
 
-Great for toggling dropdowns!
+📈&nbsp;&nbsp;Over 3,500 weekly users (as of December 2021).
+
+👍&nbsp;&nbsp;Great for toggling dropdowns!
 
 <!-- TABLE OF CONTENTS -->
 
@@ -17,10 +19,10 @@ Great for toggling dropdowns!
 
 ### Features
 
-- Detects clicks 🖱 outside an element and/or keypresses 💻 .
-- Customizable 🔨 - disable clicks, disable keypresses, or specify keys that will trigger the callback
-- Built with React hooks 🎣
-- Written in TypeScript 🔥
+- 🖱 💻&nbsp;&nbsp;Detects clicks outside an element and/or keypresses.
+- 🔨&nbsp;&nbsp;Customizable: disable clicks, disable keypresses, or specify keys that will trigger the callback
+- 🎣&nbsp;&nbsp;Built with React hooks
+- 🔥&nbsp;&nbsp;Written in TypeScript
 
 ### Installation
 
