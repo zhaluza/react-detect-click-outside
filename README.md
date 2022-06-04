@@ -6,7 +6,7 @@ A lightweight React hook that detects clicks outside elements and triggers a cal
 
 👍&nbsp;&nbsp;Great for toggling dropdowns!
 
-_**Notice:** This package is looking for maintainers! Due to my professional and personal commitments, I don't have a whole lot of time to devote to maintaining this library. Some users have pointed out a few issues in the [Github repo](https://github.com/zhaluza/react-detect-click-outside) - feel free to take a stab at them!_
+_**Notice:** This package is looking for maintainers! Due to my professional and personal commitments, I don't have a whole lot of time to devote to maintaining this library. Some users have pointed out a few issues in the [Github repo](https://github.com/zhaluza/react-detect-click-outside/issues) - feel free to take a stab at them!_
 
 <!-- TABLE OF CONTENTS -->
 
