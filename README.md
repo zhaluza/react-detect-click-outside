@@ -2,9 +2,11 @@
 
 A lightweight React hook that detects clicks outside elements and triggers a callback. Can also detect keypresses.
 
-📈&nbsp;&nbsp;Over 3,500 weekly users (as of December 2021).
+📈&nbsp;&nbsp;Over 7,600 weekly users (as of June 2022).
 
 👍&nbsp;&nbsp;Great for toggling dropdowns!
+
+_**Notice:** This package is looking for maintainers! Due to my professional and personal commitments, I don't have a whole lot of time to devote to maintaining this library. Some users have pointed out a few issues in the [Github repo](https://github.com/zhaluza/react-detect-click-outside) - feel free to take a stab at them!_
 
 <!-- TABLE OF CONTENTS -->
 
